@@ -56,22 +56,20 @@ def review(text):
   return result
 
 def main():
-   html_temp = """
-  <div class="" style="background-color:blue;" >
-  <div class="clearfix">           
-  <div class="col-md-12">
-  <center><p style="font-size:40px;color:white;margin-top:10px;">Poornima Institute of Engineering & Technology</p></center> 
-  <center><p style="font-size:30px;color:white;margin-top:10px;">Department of Computer Engineering</p></center> 
-  <center><p style="font-size:25px;color:white;margin-top:10px;"Summer Internship 2022</p></center> 
-  </div>
-  </div>
-  </div>
-  """
+    html_temp = """
+   <div class="" style="background-color:blue;" >
+   <div class="clearfix">           
+   <div class="col-md-12">
+   <center><p style="font-size:40px;color:white;margin-top:10px;">Poornima Institute of Engineering & Technology</p></center> 
+   <center><p style="font-size:30px;color:white;margin-top:10px;">Department of Computer Engineering</p></center> 
+   <center><p style="font-size:25px;color:white;margin-top:10px;"Summer Internship 2022</p></center> 
+   </div>
+   </div>
+   </div>
+   """
 st.markdown(html_temp,unsafe_allow_html=True)
 st.header("Text review system")
-  
 text = st.text_area("Write Text")
-
 if st.button("Naive Bayes"):
   result=review(text)
   st.success('Model has predicted {}'.format(result))
