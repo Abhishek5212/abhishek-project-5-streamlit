@@ -55,8 +55,8 @@ def review(text):
     
   return result
 
-
-html_temp = """
+def main():
+   html_temp = """
    <div class="" style="background-color:blue;" >
    <div class="clearfix">           
    <div class="col-md-12">
